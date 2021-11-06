@@ -12,6 +12,10 @@ ruleTester.run("count", rule, {
             options: [1]
         },
         {
+          code: "if ( b() === a()) {}",
+          options: [1]
+      },
+        {
           code: "if ( 1 === 1 || 2 === 2) {}",
           options: [2],
         },
